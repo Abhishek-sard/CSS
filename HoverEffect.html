@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f2f2f2;
+            margin: 0;
+        }
+        .button{
+            padding: 20px 40px;
+            font-size: 18px;
+            color: white;
+            border: none;
+            outline: none;
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            background-repeat: 200% 200%;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-position 0.5s, clip-path 0.5s;
+            clip-path: ellipse(50% 50% at 50% 50%);
+        }
+        .button:hover{
+            background-position: 100% 100%;
+            clip-path: circle(75% at 50% 50%);
+        }
+    </style>
+</head>
+<body>
+    <button class="button">Hover Me!</button>
+</body>
+</html>
